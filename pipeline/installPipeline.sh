@@ -8,7 +8,8 @@
 # Contract with IBM Corp.
 #******************************************************************************
 
-export REPO=https://github.com/IBM/platinum-demo-code-cloud-native-integration.git
+#export REPO=https://github.com/IBM/platinum-demo-code-cloud-native-integration.git
+export REPO=https://github.com/jeremybeucler-ibm/platinum-demo-code-cloud-native-integration.git
 export BRANCH=main
 export TARGET_NAMESPACE=${1:-"cp4i"}
 export QMGR_NAME_1=ucqm1
