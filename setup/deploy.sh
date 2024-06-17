@@ -72,9 +72,9 @@ function wait_for_operator_start() {
 oc apply -f $SCRIPT_DIR/ibm-operator-catalog.yaml -n openshift-marketplace
 oc new-project $namespace
 
-oc apply -f $SCRIPT_DIR/pipeline-operator-subscription.yaml
+# oc apply -f $SCRIPT_DIR/pipeline-operator-subscription.yaml
 
-wait_for_operator_start openshift-pipelines-operator openshift-operators
+# wait_for_operator_start openshift-pipelines-operator openshift-operators
 
 wait_for_pipeline_types 
 

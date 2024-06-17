@@ -36,7 +36,7 @@ spec:
       params:
         - name: url
           #value: "https://github.com/IBM/platinum-demo-code-cloud-native-integration.git"
-          value: "https://github.com/jeremybeucler-ibm/platinum-demo-code-cloud-native-integration.git"
+          value: "https://github.com/carsten-bornert/platinum-demo-code-cloud-native-integration.git"
         - name: subdirectory
           value: ""
         - name: deleteExisting

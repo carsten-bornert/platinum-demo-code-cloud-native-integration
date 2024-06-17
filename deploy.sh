@@ -16,7 +16,7 @@ PATCH_STORAGE=${4:-true}
 oc new-project $namespace
 oc project $namespace
 
-#setup/deploy.sh $namespace
+setup/deploy.sh $namespace
 
 if [ "$PATCH_STORAGE" = true ] ; then
   kubectl patch storageclass $BLOCK_STORAGE -p '{"metadata": {"annotations":{"storageclass.kubernetes.io/is-default-class":"true"}}}'
