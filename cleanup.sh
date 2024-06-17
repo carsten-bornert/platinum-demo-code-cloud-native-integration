@@ -18,7 +18,7 @@ hostname=$(oc get route el-infinite-cleanup-pipeline-trigger-route -o jsonpath={
 response=$(curl -d "{}" $hostname)
 echo $response
 
-sleep 180s
+sleep 180
 
 oc delete pipelineruns --all -n $namespace
 oc delete pipeline --all -n $namespace
